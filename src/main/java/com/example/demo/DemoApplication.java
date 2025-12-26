@@ -15,6 +15,6 @@ public class DemoApplication {
 
     @GetMapping("/")
     public String hello() {
-        return " \t Welcome to K8s from version 2 \n";
+        return " \t Welcome to K8s from Version 3 \n";
     }
 }
