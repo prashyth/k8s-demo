@@ -20,6 +20,6 @@ public class DemoApplication {
 		String podIp = System.getenv("POD_IP");
 		String message = System.getenv("WELCOME_MSG");
 
-		return message +" | Pod Name: " + podName + " | Pod IP: " + podIp;
+		return "This is " + message +" | Pod Name: " + podName + " | Pod IP: " + podIp;
     }
 }
