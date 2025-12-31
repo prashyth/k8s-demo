@@ -16,6 +16,9 @@ public class DemoApplication {
 
     @GetMapping("/")
     public String hello(HttpServletRequest request) {
-		return " \t Welcome to K8s | Pod IP: " + request.getLocalAddr();
+		String podName = System.getenv("POD_NAME");
+		String podIp = System.getenv("POD_IP");
+
+		return "Welcome to K8s | Pod Name: " + podName + " | Pod IP: " + podIp;
     }
 }
