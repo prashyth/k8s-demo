@@ -14,7 +14,7 @@ public class DemoApplication {
     }
 
     @GetMapping("/")
-    public String hello() {
-        return " \t Welcome to K8s from Version 4 \n";
+    public String hello(HttpServletRequest request) {
+		return " \t Welcome to K8s | Pod IP: " + request.getLocalAddr();
     }
 }
