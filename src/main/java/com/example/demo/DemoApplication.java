@@ -18,7 +18,8 @@ public class DemoApplication {
     public String hello(HttpServletRequest request) {
 		String podName = System.getenv("POD_NAME");
 		String podIp = System.getenv("POD_IP");
+		String message = System.getenv("WELCOME_MSG");
 
-		return "Welcome to K8s | Pod Name: " + podName + " | Pod IP: " + podIp;
+		return message +" | Pod Name: " + podName + " | Pod IP: " + podIp;
     }
 }
