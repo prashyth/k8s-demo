@@ -33,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: prashrv/k8s-demo:8.0
+          tags: prashrv/k8s-demo:9.0
